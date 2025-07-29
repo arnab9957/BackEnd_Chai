@@ -1,0 +1,28 @@
+{
+  "name": "basicbackend",
+  "version": "1.0.0",
+  "description": "a basic backend project",
+  "keywords": [
+    "node",
+    "coffee"
+  ],
+  "homepage": "https://github.com/arnab9957/BackEnd_Chai#readme",
+  "bugs": {
+    "url": "https://github.com/arnab9957/BackEnd_Chai/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnab9957/BackEnd_Chai.git"
+  },
+  "license": "ISC",
+  "author": "Arnab Kumar Dey",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@dotenvx/dotenvx": "^1.48.3",
+    "express": "^5.1.0"
+  }
+}
