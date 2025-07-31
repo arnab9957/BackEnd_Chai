@@ -8,7 +8,7 @@ const app = express();
 
 //Get a list of 5 jokes where they have id, title nad content
 
-app.get("/jokes", (req, res) => {
+app.get("/api/jokes", (req, res) => {
     const jokes = [
         { id: 1, title: "Joke 1", content: "This is the content of joke 1" },
         { id: 2, title: "Joke 2", content: "This is the content of joke 2" },
