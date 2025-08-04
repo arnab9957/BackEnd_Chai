@@ -1,0 +1,20 @@
+{
+  "name": "data-modelling",
+  "version": "1.0.0",
+  "description": "Data modeling with Mongoose",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "mongoose": "^8.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "keywords": ["mongoose", "mongodb", "data-modeling"],
+  "author": "",
+  "license": "ISC"
+}
