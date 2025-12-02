@@ -1,0 +1,26 @@
+# Use Node.js version 21 as the base image
+FROM node:21
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy package.json and package-lock.json first
+COPY package*.json ./
+
+# Install all dependencies (including dev dependencies)
+RUN npm install
+
+# Copy all application source files
+COPY . .
+
+# Build the production-ready static files
+RUN npm run build
+
+# Install a simple HTTP server to serve the built files
+RUN npm install -g serve
+
+# Expose port 3000 for the application
+EXPOSE 3000
+
+# Serve the built files from the dist directory
+CMD ["serve", "-s", "dist", "-l", "3000"]
